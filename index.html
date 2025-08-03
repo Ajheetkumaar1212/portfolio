@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AJHEET KUMAAR T - Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 70px;
+    }
+  </style>
 </head>
 <body class="bg-gray-100 font-sans">
 
@@ -15,8 +21,7 @@
     <nav>
       <ul class="flex space-x-6 font-semibold">
         <li><a href="#about" class="hover:text-yellow-300">About</a></li>
-        <li><a href="#education" class="hover:text-yellow-300">Education</a></li>
-        <li><a href="#skills" class="hover:text-yellow-300">Skills</a></li>
+        <li><a href="#education" class="hover:text-yellow-300">Education & Skills</a></li>
         <li><a href="#projects" class="hover:text-yellow-300">Projects</a></li>
         <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
       </ul>
@@ -24,163 +29,172 @@
   </div>
 </header>
 
-<!-- Smooth scrolling and offset for fixed navbar -->
-<style>
-  html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 80px; /* Adjust this to match navbar height */
-  }
-</style>
-
-
 <!-- Hero Section -->
-<section class="h-screen bg-gradient-to-r from-blue-600 to-purple-700 flex flex-col justify-center items-center text-white text-center px-4">
-  <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm AJHEET KUMAAR T</h1>
-  <p class="text-xl md:text-2xl mb-6">B.E CSE | Cybersecurity Enthusiast | Front-End & Software Testing</p>
-  <a href="Ajheetkumaar_resume.pdf" download class="bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-yellow-300 transition">Download Resume</a>
+<section class="h-[80vh] bg-gradient-to-r from-blue-600 to-purple-700 flex flex-col md:flex-row justify-center items-center text-white px-6 text-center md:text-left">
+  
+  <!-- Left Side: Name and Degree -->
+  <div class="md:w-1/2 flex flex-col justify-center items-center md:items-start space-y-6">
+    <h1 class="text-4xl md:text-6xl font-bold whitespace-nowrap">
+      Hi, I'm AJHEET KUMAAR T
+    </h1>
+    <p class="text-xl md:text-2xl">
+      B.E CSE | Cybersecurity Enthusiast | Front-End & Software Testing
+    </p>
+  </div>
+
+  <!-- Right Side: Profile Image -->
+  <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center md:justify-end">
+    <img src="Ajheetkumaar photo.png" alt="Profile" class="w-56 h-56 rounded-full shadow-lg border-4 border-white">
+  </div>
+
 </section>
 
-<main class="container mx-auto px-4 py-16 space-y-20">
+
+<main class="container mx-auto px-4 pt-24 space-y-12">
 
 <!-- About Section -->
-<section id="about" class="max-w-5xl mx-auto">
-  <h2 class="text-4xl font-bold mb-6 text-center">About Me</h2>
-  <p class="text-gray-700 text-lg leading-relaxed mb-4 text-center">
-    Aspiring Cybersecurity and IT professional with a strong foundation in software testing, 
+<section id="about" class="max-w-4xl mx-auto py-12 text-center">
+  <h2 class="text-4xl font-bold mb-6">About Me</h2>
+  <p class="text-gray-700 text-lg leading-relaxed mb-6">
+    Aspiring Cybersecurity and IT professional with skills in software testing, 
     front-end development, and ethical hacking. Passionate about building secure, 
-    efficient, and user-friendly digital solutions while contributing to the growth of a 
-    forward-thinking organization.
+    efficient, and user-friendly digital solutions.
   </p>
-
+  <a href="Ajheetkumaar_resume.pdf" download class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-yellow-300 hover:text-black transition">Download Resume</a>
 </section>
 
-<!-- Education Section -->
-<section id="education">
-  <h2 class="text-4xl font-bold mb-6 text-center">Education</h2>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Education & Skills Section -->
+<section id="education" class="py-12">
+  <h2 class="text-4xl font-bold mb-12 text-center">Education & Skills</h2>
 
-    <!-- B.E Card -->
+  <!-- Education Cards -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
     <div class="bg-white shadow-md rounded-md p-6 text-center">
-      <img src="https://img.icons8.com/fluency/48/graduation-cap.png" alt="Graduation" class="mx-auto mb-4 w-12 h-12">
-      <h3 class="text-xl font-semibold mb-2">B.E Computer Science Engineer(Cyber Security)</h3>
-      <p class="text-gray-700">Paavai College of Engineering, Namakkal</p>
+      <img src="https://img.icons8.com/fluency/48/graduation-cap.png" class="mx-auto mb-4">
+      <h3 class="text-xl font-semibold mb-2">B.E CSE (Cyber Security)</h3>
+      <p class="text-gray-700">Paavai College of Engineering</p>
       <p class="text-gray-500">CGPA: 8.40 | 2022 - 2026</p>
     </div>
-
-    <!-- HSC Card -->
     <div class="bg-white shadow-md rounded-md p-6 text-center">
-      <img src="https://img.icons8.com/fluency/48/school-building.png" alt="HSC" class="mx-auto mb-4 w-12 h-12">
-      <h3 class="text-xl font-semibold mb-2">Higher Secondary (HSC)(CBSE)</h3>
-      <p class="text-gray-700">Hillock International School, Dindigul</p>
-      <p class="text-gray-500">Percentage: 72% | 2021 - 2022</p>
+      <img src="https://img.icons8.com/fluency/48/school-building.png" class="mx-auto mb-4">
+      <h3 class="text-xl font-semibold mb-2">HSC (CBSE)</h3>
+      <p class="text-gray-700">Hillock International School</p>
+      <p class="text-gray-500">Percentage: 72% | 2022</p>
     </div>
-
-    <!-- SSLC Card -->
     <div class="bg-white shadow-md rounded-md p-6 text-center">
-      <img src="https://img.icons8.com/fluency/48/school.png" alt="SSLC" class="mx-auto mb-4 w-12 h-12">
-      <h3 class="text-xl font-semibold mb-2">Secondary School (SSLC)(CBSE)</h3>
-      <p class="text-gray-700">Shri Maharishi Vidya Mandir, Dindigul</p>
-      <p class="text-gray-500">Percentage: 62% | 2019 - 2020</p>
+      <img src="https://img.icons8.com/fluency/48/school.png" class="mx-auto mb-4">
+      <h3 class="text-xl font-semibold mb-2">SSLC (CBSE)</h3>
+      <p class="text-gray-700">Shri Maharishi Vidya Mandir</p>
+      <p class="text-gray-500">Percentage: 62% | 2020</p>
     </div>
-
   </div>
-</section>
 
-<!-- Skills Section -->
-<section id="skills" class="py-12">
-  <h2 class="text-4xl font-bold mb-6 text-center">Skills</h2>
+  <!-- Skills Grid -->
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-    <!-- Front-End Development -->
     <div class="bg-white shadow-md rounded-md p-6">
-      <h3 class="text-xl font-semibold mb-4">Front-End Development</h3>
+      <h3 class="text-xl font-semibold mb-4">Front-End</h3>
       <ul class="space-y-2">
-        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/html-5--v1.png" class="w-8 h-8">HTML</li>
-        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/css3.png" class="w-8 h-8">CSS</li>
-        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/javascript--v1.png" class="w-8 h-8">JavaScript</li>
+        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/html-5--v1.png" class="w-6 h-6">HTML</li>
+        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/css3.png" class="w-6 h-6">CSS</li>
+        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/javascript--v1.png" class="w-6 h-6">JavaScript</li>
       </ul>
     </div>
-
-    <!-- Programming & Automation -->
     <div class="bg-white shadow-md rounded-md p-6">
-      <h3 class="text-xl font-semibold mb-4">Programming & Automation</h3>
+      <h3 class="text-xl font-semibold mb-4">Programming</h3>
       <ul class="space-y-2">
-        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/java-coffee-cup-logo.png" class="w-8 h-8">Java</li>
-        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/data-configuration.png" class="w-8 h-8">DSA using Java</li>
-        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/fluency/48/github.png" class="w-8 h-8">GitHub</li>
+        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/java-coffee-cup-logo.png" class="w-6 h-6">Java</li>
+        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/data-configuration.png" class="w-6 h-6">DSA in Java</li>
+        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/fluency/48/github.png" class="w-6 h-6">GitHub</li>
       </ul>
     </div>
-
-    <!-- Cybersecurity -->
     <div class="bg-white shadow-md rounded-md p-6">
       <h3 class="text-xl font-semibold mb-4">Cybersecurity</h3>
       <ul class="space-y-2">
-        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/firewall.png" class="w-8 h-8">Ethical Hacking</li>
-        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/networking-manager.png" class="w-8 h-8">Networking & System Security</li>
-        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/bug.png" class="w-8 h-8">Software Testing & Debugging</li>
+        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/firewall.png" class="w-6 h-6">Ethical Hacking</li>
+        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/networking-manager.png" class="w-6 h-6">Networking & Security</li>
+        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/bug.png" class="w-6 h-6">Software Testing</li>
       </ul>
     </div>
-
   </div>
 </section>
 
 <!-- Projects Section -->
 <section id="projects" class="py-12">
-  <h2 class="text-4xl font-bold mb-6 text-center">Projects</h2>
+  <h2 class="text-4xl font-bold mb-12 text-center">Projects</h2>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-    <!-- Front-End Development Project -->
-    <div class="bg-white shadow-md rounded-md p-6">
-      <h3 class="text-2xl font-semibold mb-2">Responsive Web Development</h3>
-      <p class="text-gray-700 mb-4">
-        Built a fully responsive website using HTML, CSS, and JavaScript 
-        with a focus on UI/UX design, cross-browser compatibility, and 
-        mobile-friendly layouts.
-      </p>
-      <a href="#" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+    <!-- Project 1 -->
+    <div class="bg-white shadow-md rounded-md overflow-hidden">
+      <img src="https://img.icons8.com/color/480/html-5--v1.png" class="w-full h-40 object-contain bg-gray-100">
+      <div class="p-6">
+        <h3 class="text-2xl font-semibold mb-2">Responsive Web Development</h3>
+        <p class="text-gray-700 mb-4">Built a fully responsive website with focus on UI/UX and cross-browser compatibility.</p>
+        <a href="#" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+      </div>
     </div>
 
-    <!-- Ethical Hacking Project -->
-    <div class="bg-white shadow-md rounded-md p-6">
-      <h3 class="text-2xl font-semibold mb-2">Ethical Hacking & Security Testing</h3>
-      <p class="text-gray-700 mb-4">
-        Conducted vulnerability assessment and penetration testing using 
-        Kali Linux, Wireshark, and Burp Suite to identify and mitigate 
-        potential security risks.
-      </p>
-      <a href="#" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+    <!-- Project 2 -->
+    <div class="bg-white shadow-md rounded-md overflow-hidden">
+      <img src="https://img.icons8.com/color/480/cyber-security.png" class="w-full h-40 object-contain bg-gray-100">
+      <div class="p-6">
+        <h3 class="text-2xl font-semibold mb-2">Ethical Hacking & Security Testing</h3>
+        <p class="text-gray-700 mb-4">Performed vulnerability assessment and penetration testing using Kali Linux and Burp Suite.</p>
+        <a href="#" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+      </div>
     </div>
 
-    <!-- AI Chatbot System Project -->
-    <div class="bg-white shadow-md rounded-md p-6">
-      <h3 class="text-2xl font-semibold mb-2">AI Chatbot System</h3>
-      <p class="text-gray-700 mb-4">
-        Created an AI-based chatbot using Python and basic NLP techniques 
-        to automate query responses and enhance user interaction.
-      </p>
-      <a href="https://github.com/Swarnak27/Mental-health-chatbot" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+    <!-- Project 3 (AI Chatbot with clear image) -->
+    <div class="bg-white shadow-md rounded-md overflow-hidden">
+      <img src="chatbot 3.avif" class="w-full h-40 object-cover">
+      <div class="p-6">
+        <h3 class="text-2xl font-semibold mb-2">AI Chatbot System</h3>
+        <p class="text-gray-700 mb-4">Developed a Python-based NLP chatbot for automating responses and enhancing user interaction.</p>
+        <a href="https://github.com/Swarnak27/Mental-health-chatbot" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+      </div>
     </div>
 
   </div>
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="py-16 bg-gray-50">
+<section id="contact" class="py-12 bg-gray-50">
   <h2 class="text-4xl font-bold mb-6 text-center">Contact</h2>
-  <ul class="space-y-4 text-gray-700 text-lg text-center">
-    <li class="flex justify-center items-center space-x-3"><img src="https://img.icons8.com/fluency/48/worldwide-location.png" class="w-6 h-6">Dindigul, Tamil Nadu</li>
-    <li class="flex justify-center items-center space-x-3"><img src="https://img.icons8.com/fluency/48/phone.png" class="w-6 h-6">+91 8667889765</li>
-    <li class="flex justify-center items-center space-x-3"><img src="https://img.icons8.com/fluency/48/email.png" class="w-6 h-6"><a href="mailto:ajheetkumaar1212@gmail.com" class="text-blue-600 hover:underline">ajheetkumaar1212@gmail.com</a></li>
-    <li class="flex justify-center items-center space-x-3"><img src="https://img.icons8.com/fluency/48/linkedin.png" class="w-6 h-6"><a href="https://www.linkedin.com/in/ajheet-kumaar-92872b355/" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a></li>
-    <li class="flex justify-center items-center space-x-3"><img src="https://img.icons8.com/fluency/48/github.png" class="w-6 h-6"><a href="https://github.com/Ajheetkumaar1212" target="_blank" class="text-blue-600 hover:underline">GitHub</a></li>
-  </ul>
+
+  <!-- Contact Info Only -->
+  <div class="space-y-4 text-gray-700 text-lg max-w-md mx-auto text-center">
+    <p class="flex items-center justify-center space-x-3">
+      <img src="https://img.icons8.com/fluency/48/worldwide-location.png" class="w-6 h-6"> 
+      <span>Dindigul, Tamil Nadu</span>
+    </p>
+    <p class="flex items-center justify-center space-x-3">
+      <img src="https://img.icons8.com/fluency/48/phone.png" class="w-6 h-6"> 
+      <span>+91 8667889765</span>
+    </p>
+    <p class="flex items-center justify-center space-x-3">
+      <img src="https://img.icons8.com/fluency/48/email.png" class="w-6 h-6">
+      <a href="mailto:ajheetkumaar1212@gmail.com" class="text-blue-600 hover:underline">
+        ajheetkumaar1212@gmail.com
+      </a>
+    </p>
+    <p class="flex items-center justify-center space-x-3">
+      <img src="https://img.icons8.com/fluency/48/linkedin.png" class="w-6 h-6">
+      <a href="https://www.linkedin.com/in/ajheet-kumaar-92872b355/" target="_blank" class="text-blue-600 hover:underline">
+        LinkedIn
+      </a>
+    </p>
+    <p class="flex items-center justify-center space-x-3">
+      <img src="https://img.icons8.com/fluency/48/github.png" class="w-6 h-6">
+      <a href="https://github.com/Ajheetkumaar1212" target="_blank" class="text-blue-600 hover:underline">
+        GitHub
+      </a>
+    </p>
+  </div>
 </section>
 
 <!-- Footer -->
-<footer class="bg-gray-800 text-white py-6 text-center">
+<footer class="bg-gray-800 text-white py-6 text-center mt-12">
   <p>&copy; 2025 Ajheetkumaar. All Rights Reserved.</p>
 </footer>
 
-</main>
-</body>
-</html>
+
+
