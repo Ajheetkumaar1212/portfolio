@@ -17,12 +17,14 @@
 <!-- Navbar -->
 <header class="bg-blue-600 text-white py-4 fixed w-full z-10 shadow-md">
   <div class="container mx-auto px-6 flex justify-between items-center">
-    <h1 class="text-2xl font-bold">AJHEET KUMAAR T</h1>
+    <h1 class="text-xl md:text-2xl font-bold">AJHEET KUMAAR T</h1>
     <nav>
-      <ul class="flex space-x-6 font-semibold">
+      <ul class="flex space-x-4 md:space-x-6 font-semibold text-sm md:text-base">
         <li><a href="#about" class="hover:text-yellow-300">About</a></li>
         <li><a href="#education" class="hover:text-yellow-300">Education & Skills</a></li>
+        <li><a href="#internship" class="hover:text-yellow-300">Internship</a></li>
         <li><a href="#projects" class="hover:text-yellow-300">Projects</a></li>
+        <li><a href="#certificate" class="hover:text-yellow-300">Certificates</a></li>
         <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
       </ul>
     </nav>
@@ -30,105 +32,147 @@
 </header>
 
 <!-- Hero Section -->
-<section class="h-[80vh] bg-gradient-to-r from-blue-600 to-purple-700 flex flex-col md:flex-row justify-center items-center text-white px-6 text-center md:text-left">
+<section class="h-[80vh] bg-gradient-to-r from-blue-600 to-purple-700 flex flex-col md:flex-row justify-center items-center text-white px-6 text-center md:text-left pt-20 md:pt-0">
   
   <!-- Left Side: Name and Degree -->
-  <div class="md:w-1/2 flex flex-col justify-center items-center md:items-start space-y-6">
-    <h1 class="text-4xl md:text-6xl font-bold whitespace-nowrap">
+  <div class="md:w-1/2 flex flex-col justify-center items-center md:items-start space-y-4 md:space-y-6">
+    <h1 class="text-3xl md:text-6xl font-bold">
       Hi, I'm AJHEET KUMAAR T
     </h1>
-    <p class="text-xl md:text-2xl">
+    <p class="text-lg md:text-2xl">
       B.E CSE | Cybersecurity Enthusiast | Front-End & Software Testing
     </p>
   </div>
 
   <!-- Right Side: Profile Image -->
-  <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center md:justify-end">
-    <img src="Ajheetkumaar photo.png" alt="Profile" class="w-56 h-56 rounded-full shadow-lg border-4 border-white">
+  <div class="md:w-1/2 mt-6 md:mt-0 flex justify-center md:justify-end">
+    <img src="Ajheetkumaar photo.png" alt="Profile" class="w-32 h-32 md:w-56 md:h-56 rounded-full shadow-lg border-4 border-white object-cover">
   </div>
 
 </section>
 
-
-<main class="container mx-auto px-4 pt-24 space-y-12">
+<main class="container mx-auto px-4 pt-12 md:pt-24 space-y-12">
 
 <!-- About Section -->
 <section id="about" class="max-w-4xl mx-auto py-12 text-center">
-  <h2 class="text-4xl font-bold mb-6">About Me</h2>
-  <p class="text-gray-700 text-lg leading-relaxed mb-6">
+  <h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
+  <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-6 px-2">
     Aspiring Cybersecurity and IT professional with skills in software testing, 
     front-end development, and ethical hacking. Passionate about building secure, 
     efficient, and user-friendly digital solutions.
   </p>
-  <a href="Ajheetkumaar_resume.pdf" download class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-yellow-300 hover:text-black transition">Download Resume</a>
+  <a href="Ajheetkumaar_resume.pdf" download class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-yellow-300 hover:text-black transition">
+    Download Resume
+  </a>
 </section>
 
 <!-- Education & Skills Section -->
 <section id="education" class="py-12">
-  <h2 class="text-4xl font-bold mb-12 text-center">Education & Skills</h2>
+  <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Education & Skills</h2>
 
   <!-- Education Cards -->
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
     <div class="bg-white shadow-md rounded-md p-6 text-center">
       <img src="https://img.icons8.com/fluency/48/graduation-cap.png" class="mx-auto mb-4">
-      <h3 class="text-xl font-semibold mb-2">B.E CSE (Cyber Security)</h3>
-      <p class="text-gray-700">Paavai College of Engineering</p>
-      <p class="text-gray-500">CGPA: 8.40 | 2022 - 2026</p>
+      <h3 class="text-lg md:text-xl font-semibold mb-2">B.E CSE (Cyber Security)</h3>
+      <p class="text-gray-700 text-sm md:text-base">Paavai College of Engineering</p>
+      <p class="text-gray-500 text-sm md:text-base">CGPA: 8.40 | 2022 - 2026</p>
     </div>
     <div class="bg-white shadow-md rounded-md p-6 text-center">
       <img src="https://img.icons8.com/fluency/48/school-building.png" class="mx-auto mb-4">
-      <h3 class="text-xl font-semibold mb-2">HSC (CBSE)</h3>
-      <p class="text-gray-700">Hillock International School</p>
-      <p class="text-gray-500">Percentage: 72% | 2022</p>
+      <h3 class="text-lg md:text-xl font-semibold mb-2">HSC (CBSE)</h3>
+      <p class="text-gray-700 text-sm md:text-base">Hillock International School</p>
+      <p class="text-gray-500 text-sm md:text-base">Percentage: 72% | 2022</p>
     </div>
     <div class="bg-white shadow-md rounded-md p-6 text-center">
       <img src="https://img.icons8.com/fluency/48/school.png" class="mx-auto mb-4">
-      <h3 class="text-xl font-semibold mb-2">SSLC (CBSE)</h3>
-      <p class="text-gray-700">Shri Maharishi Vidya Mandir</p>
-      <p class="text-gray-500">Percentage: 62% | 2020</p>
+      <h3 class="text-lg md:text-xl font-semibold mb-2">SSLC (CBSE)</h3>
+      <p class="text-gray-700 text-sm md:text-base">Shri Maharishi Vidya Mandir</p>
+      <p class="text-gray-500 text-sm md:text-base">Percentage: 62% | 2020</p>
     </div>
   </div>
 
   <!-- Skills Grid -->
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
     <div class="bg-white shadow-md rounded-md p-6">
-      <h3 class="text-xl font-semibold mb-4">Front-End</h3>
-      <ul class="space-y-2">
-        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/html-5--v1.png" class="w-6 h-6">HTML</li>
-        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/css3.png" class="w-6 h-6">CSS</li>
-        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/javascript--v1.png" class="w-6 h-6">JavaScript</li>
+      <h3 class="text-lg md:text-xl font-semibold mb-4">Front-End</h3>
+      <ul class="space-y-2 text-sm md:text-base">
+        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/html-5--v1.png" class="w-5 h-5">HTML</li>
+        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/css3.png" class="w-5 h-5">CSS</li>
+        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/javascript--v1.png" class="w-5 h-5">JavaScript</li>
       </ul>
     </div>
     <div class="bg-white shadow-md rounded-md p-6">
-      <h3 class="text-xl font-semibold mb-4">Programming</h3>
-      <ul class="space-y-2">
-        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/java-coffee-cup-logo.png" class="w-6 h-6">Java</li>
-        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/data-configuration.png" class="w-6 h-6">DSA in Java</li>
-        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/fluency/48/github.png" class="w-6 h-6">GitHub</li>
+      <h3 class="text-lg md:text-xl font-semibold mb-4">Programming</h3>
+      <ul class="space-y-2 text-sm md:text-base">
+        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/java-coffee-cup-logo.png" class="w-5 h-5">Java</li>
+        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/data-configuration.png" class="w-5 h-5">DSA in Java</li>
+        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/fluency/48/github.png" class="w-5 h-5">GitHub</li>
       </ul>
     </div>
     <div class="bg-white shadow-md rounded-md p-6">
-      <h3 class="text-xl font-semibold mb-4">Cybersecurity</h3>
-      <ul class="space-y-2">
-        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/firewall.png" class="w-6 h-6">Ethical Hacking</li>
-        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/networking-manager.png" class="w-6 h-6">Networking & Security</li>
-        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/bug.png" class="w-6 h-6">Software Testing</li>
+      <h3 class="text-lg md:text-xl font-semibold mb-4">Cybersecurity</h3>
+      <ul class="space-y-2 text-sm md:text-base">
+        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/firewall.png" class="w-5 h-5">Ethical Hacking</li>
+        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/networking-manager.png" class="w-5 h-5">Networking & Security</li>
+        <li class="flex items-center space-x-2"><img src="https://img.icons8.com/color/48/bug.png" class="w-5 h-5">Software Testing</li>
       </ul>
     </div>
+  </div>
+</section>
+
+<!-- Internship / Workshop Section -->
+<section id="internship" class="py-12">
+  <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Internships & Workshops</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
+
+    <!-- Internship 1 -->
+    <div class="bg-white shadow-md rounded-md p-6 text-center">
+      <img src="https://img.icons8.com/color/64/briefcase.png" class="mx-auto mb-4" alt="Internship">
+      <h3 class="text-lg md:text-xl font-semibold mb-2">Software Testing Internship</h3>
+      <p class="text-gray-600 text-sm md:text-base mb-3">
+        Completed a 2-month Software Testing internship, gaining hands-on experience in 
+        manual testing and bug reporting.
+      </p>
+      <a href="software testing.png" target="_blank" class="text-blue-600 hover:underline text-sm">View Certificate</a>
+    </div>
+
+    <!-- Internship 2 -->
+    <div class="bg-white shadow-md rounded-md p-6 text-center">
+      <img src="https://img.icons8.com/color/64/workshop.png" class="mx-auto mb-4" alt="Workshop">
+      <h3 class="text-lg md:text-xl font-semibold mb-2">Cybersecurity Workshop</h3>
+      <p class="text-gray-600 text-sm md:text-base mb-3">
+        Attended a 3-day ethical hacking and penetration testing workshop 
+        using Kali Linux and Burp Suite.
+      </p>
+      <a href="workship ethical hacking.pdf" target="_blank" class="text-blue-600 hover:underline text-sm">View Certificate</a>
+    </div>
+
+    <!-- Internship 3 -->
+    <div class="bg-white shadow-md rounded-md p-6 text-center">
+      <img src="https://img.icons8.com/color/64/conference.png" class="mx-auto mb-4" alt="Internship">
+      <h3 class="text-lg md:text-xl font-semibold mb-2">Front-End Development Training</h3>
+      <p class="text-gray-600 text-sm md:text-base mb-3">
+        Completed hands-on workshop on HTML, CSS, and JavaScript, 
+        building responsive websites and UI components.
+      </p>
+      <a href="stack development.png" target="_blank" class="text-blue-600 hover:underline text-sm">View Certificate</a>
+    </div>
+
   </div>
 </section>
 
 <!-- Projects Section -->
 <section id="projects" class="py-12">
-  <h2 class="text-4xl font-bold mb-12 text-center">Projects</h2>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Projects</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
     <!-- Project 1 -->
     <div class="bg-white shadow-md rounded-md overflow-hidden">
       <img src="https://img.icons8.com/color/480/html-5--v1.png" class="w-full h-40 object-contain bg-gray-100">
       <div class="p-6">
-        <h3 class="text-2xl font-semibold mb-2">Responsive Web Development</h3>
-        <p class="text-gray-700 mb-4">Built a fully responsive website with focus on UI/UX and cross-browser compatibility.</p>
+        <h3 class="text-xl font-semibold mb-2">Responsive Web Development</h3>
+        <p class="text-gray-700 mb-4 text-sm md:text-base">Built a fully responsive website with focus on UI/UX and cross-browser compatibility.</p>
         <a href="#" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
       </div>
     </div>
@@ -137,18 +181,18 @@
     <div class="bg-white shadow-md rounded-md overflow-hidden">
       <img src="https://img.icons8.com/color/480/cyber-security.png" class="w-full h-40 object-contain bg-gray-100">
       <div class="p-6">
-        <h3 class="text-2xl font-semibold mb-2">Ethical Hacking & Security Testing</h3>
-        <p class="text-gray-700 mb-4">Performed vulnerability assessment and penetration testing using Kali Linux and Burp Suite.</p>
+        <h3 class="text-xl font-semibold mb-2">Ethical Hacking & Security Testing</h3>
+        <p class="text-gray-700 mb-4 text-sm md:text-base">Performed vulnerability assessment and penetration testing using Kali Linux and Burp Suite.</p>
         <a href="#" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
       </div>
     </div>
 
-    <!-- Project 3 (AI Chatbot with clear image) -->
+    <!-- Project 3 -->
     <div class="bg-white shadow-md rounded-md overflow-hidden">
-      <img src="chatbot 3.avif" class="w-full h-40 object-cover">
+      <img src="chatbot-3.avif" class="w-full h-40 object-contain bg-gray-100">
       <div class="p-6">
-        <h3 class="text-2xl font-semibold mb-2">AI Chatbot System</h3>
-        <p class="text-gray-700 mb-4">Developed a Python-based NLP chatbot for automating responses and enhancing user interaction.</p>
+        <h3 class="text-xl font-semibold mb-2">AI Chatbot System</h3>
+        <p class="text-gray-700 mb-4 text-sm md:text-base">Developed a Python-based NLP chatbot for automating responses and enhancing user interaction.</p>
         <a href="https://github.com/Swarnak27/Mental-health-chatbot" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
       </div>
     </div>
@@ -156,45 +200,128 @@
   </div>
 </section>
 
+
+
+<!-- Certificates Section -->
+<section id="certificate" class="py-12">
+  <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Certificates</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
+    <!-- Ethical Hacking Certificate -->
+    <div class="bg-white shadow-md rounded-md p-6 text-center">
+      <img src="https://img.icons8.com/color/64/security-checked.png" class="mx-auto mb-4" alt="Certificate">
+      <h3 class="text-lg md:text-xl font-semibold mb-2">Ethical Hacking</h3>
+      <p class="text-gray-600 text-sm md:text-base mb-3">
+        Certified by Udemy for completing Ethical Hacking Fundamentals course.
+      </p>
+      <a href="Ethical Hacking Training - Certificate of Completion-1.pdf" target="_blank" class="text-blue-600 hover:underline text-sm">View Certificate</a>
+    </div>
+
+    <!-- Java Programming Certificate -->
+    <div class="bg-white shadow-md rounded-md p-6 text-center">
+      <img src="https://img.icons8.com/color/64/certificate.png" class="mx-auto mb-4" alt="Certificate">
+      <h3 class="text-lg md:text-xl font-semibold mb-2">Java Programming</h3>
+      <p class="text-gray-600 text-sm md:text-base mb-3">
+        Certified by Coursera for completing Java Programming Basics for Software Development.
+      </p>
+      <a href="oracle certificate.pdf.pdf" target="_blank" class="text-blue-600 hover:underline text-sm">View Certificate</a>
+    </div>
+
+    
+
+    <!-- Front End Development Certificate -->
+    <div class="bg-white shadow-md rounded-md p-6 text-center">
+      <img src="https://img.icons8.com/color/64/online.png" class="mx-auto mb-4" alt="Certificate">
+      <h3 class="text-lg md:text-xl font-semibold mb-2">Web Development</h3>
+      <p class="text-gray-600 text-sm md:text-base mb-3">
+        Certified by Great Learning Academy for front-end development.
+      </p>
+      <a href="web development certificate.pdf" target="_blank" class="text-blue-600 hover:underline text-sm">View Certificate</a>
+    </div>
+
+  </div>
+</section>
+
 <!-- Contact Section -->
 <section id="contact" class="py-12 bg-gray-50">
-  <h2 class="text-4xl font-bold mb-6 text-center">Contact</h2>
+  <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center">Contact</h2>
 
-  <!-- Contact Info Only -->
-  <div class="space-y-4 text-gray-700 text-lg max-w-md mx-auto text-center">
+  <div class="space-y-4 text-gray-700 text-sm md:text-lg max-w-md mx-auto text-center">
     <p class="flex items-center justify-center space-x-3">
-      <img src="https://img.icons8.com/fluency/48/worldwide-location.png" class="w-6 h-6"> 
+      <img src="https://img.icons8.com/fluency/48/worldwide-location.png" class="w-5 h-5 md:w-6 md:h-6"> 
       <span>Dindigul, Tamil Nadu</span>
     </p>
     <p class="flex items-center justify-center space-x-3">
-      <img src="https://img.icons8.com/fluency/48/phone.png" class="w-6 h-6"> 
+      <img src="https://img.icons8.com/fluency/48/phone.png" class="w-5 h-5 md:w-6 md:h-6"> 
       <span>+91 8667889765</span>
     </p>
     <p class="flex items-center justify-center space-x-3">
-      <img src="https://img.icons8.com/fluency/48/email.png" class="w-6 h-6">
+      <img src="https://img.icons8.com/fluency/48/email.png" class="w-5 h-5 md:w-6 md:h-6">
       <a href="mailto:ajheetkumaar1212@gmail.com" class="text-blue-600 hover:underline">
         ajheetkumaar1212@gmail.com
       </a>
     </p>
     <p class="flex items-center justify-center space-x-3">
-      <img src="https://img.icons8.com/fluency/48/linkedin.png" class="w-6 h-6">
+      <img src="https://img.icons8.com/fluency/48/linkedin.png" class="w-5 h-5 md:w-6 md:h-6">
       <a href="https://www.linkedin.com/in/ajheet-kumaar-92872b355/" target="_blank" class="text-blue-600 hover:underline">
         LinkedIn
       </a>
     </p>
     <p class="flex items-center justify-center space-x-3">
-      <img src="https://img.icons8.com/fluency/48/github.png" class="w-6 h-6">
+      <img src="https://img.icons8.com/fluency/48/github.png" class="w-5 h-5 md:w-6 md:h-6">
       <a href="https://github.com/Ajheetkumaar1212" target="_blank" class="text-blue-600 hover:underline">
         GitHub
       </a>
     </p>
   </div>
 </section>
-
 <!-- Footer -->
-<footer class="bg-gray-800 text-white py-6 text-center mt-12">
-  <p>&copy; 2025 Ajheetkumaar. All Rights Reserved.</p>
+<footer id="scrollFooter" class="fixed bottom-[-100px] left-0 w-full bg-gray-800 text-white text-center py-3 border-t border-gray-700 shadow-lg z-50 transition-all duration-500">
+  <p class="mb-1 text-xs md:text-sm">&copy; 2025 Ajheet Kumaar T. All Rights Reserved.</p>
+
+  <div class="flex justify-center gap-5 text-base md:text-lg">
+    <a href="https://www.linkedin.com/in/ajheet-kumaar-92872b355/"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="hover:text-blue-400 transition duration-200"
+       aria-label="LinkedIn" title="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://github.com/Ajheetkumaar1212"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="hover:text-gray-300 transition duration-200"
+       aria-label="GitHub" title="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+
+    <a href="mailto:ajheetkumaar1212@gmail.com"
+       target="_blank"
+       class="hover:text-red-400 transition duration-200"
+       aria-label="Send Email" title="Send Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
 </footer>
 
+<!-- JavaScript: Footer visible only on manual scroll to bottom -->
+<script>
+  const footer = document.getElementById("scrollFooter");
+  let userScrolled = false;
 
+  // Detect manual scroll
+  window.addEventListener("wheel", () => userScrolled = true, { passive: true });
+  window.addEventListener("touchmove", () => userScrolled = true, { passive: true });
 
+  window.addEventListener("scroll", function () {
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+
+    // Only show footer if user scrolled manually AND reached bottom
+    if (userScrolled && scrollPosition >= documentHeight - 50) {
+      footer.style.bottom = "0";
+    } else {
+      footer.style.bottom = "-100px";
+    }
+  });
+</script>
